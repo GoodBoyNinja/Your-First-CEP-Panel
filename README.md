@@ -26,7 +26,7 @@ Otherwise, I suggest that you start a bit smaller. Eventually after you feel a b
 
 
 # First steps
-Extensions are just a folder. Create a folder with the name of your tool somewhere that it is comfortable for you to work from. I'll refer to this folder as `myExtension` on this page.
+Create a folder with the name of your tool somewhere that it is comfortable for you to work from. I'll refer to this folder as `myExtension` on this page.
 
 **Where?**
 You might be tempted to create your extension folder where extensions are loaded from (in one of the following directories as mentioned in the [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md)):
@@ -78,6 +78,66 @@ More resources on symbolic link:
 -That way you can make sure there is an online copy of your files from time to time.
 -Dropbox saved my butt once with their time machine, so keep that in mind.
 ```
+
+
+# Folder Structure
+You could use the [test extension](https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x/Samples/CEP_HTML_Test_Extension-9.0) from the CEP-Resources repository. However, I would suggest something more like:
+```
+{
+myExtension/
+        |
+        |_src/
+        |     |__ js/
+        |     |__ jsx/
+        |     |__ -html/
+        |     |__ -css/
+        |     |__ -assets/
+        |     |__ -CSXS/
+        |
+        |_dist/
+        }
+```
+So far there are no files, only folders.
+This folder structure is close to what you would find in [Adam's skeletron](https://github.com/adamplouff/CEP-Skelotron).
+We would work inside the **src** folder and its sub folders. The dist folder will be a place to store the release versions.
+
+#we need files
+Get [this file](https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x/Samples/CEP_HTML_Test_Extension-9.0/CSXS) called `manifest.xml`. If you are reading this in the future, you might want check if newer versions exists. sorry <3
+
+Download `manifest.xml` and place it inside your CSXS Folder.
+
+### What is manifest.xml?
+When after-Effects launches, it is looking for one and only file, `manifest.xml`.
+Inside it there are details about the name of the extension, the version and other info.
+It also points (read below) to two important places: `index.html` and `main.jsx`.
+
+-Web pages are .html files. You are doing to want to create an `index.html` file in your `html` sub folder. The file does not have to be named "index", but it's a common convention.
+
+-.jsx files are extendscript files in our case. If you wrote scripts before you know what they are. go ahead and create a `main.jsx` file in your jx sub folder. Same thing, the name doesn't matter.
+
+### edit manifest.xml
+the manifest file looks somewhat [like this.](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_9.x/Samples/CEP_HTML_Test_Extension-9.0/CSXS/manifest.xml).
+
+For a basic single panel, your <ExtensionList> should look somewhat like this:
+ ```
+  {
+      <ExtensionList>
+        <Extension Id="com.adobe.TOOL-NAME.Panel" Version="6.1.0"/>
+    </ExtensionList>
+  }
+  ```
+ your <hostList> is a list of apps that will be able to run your extension. If you target only Ae:
+  ```
+  {
+          <HostList>
+            <Host Name="AEFT" Version="13.0"/>
+        </HostList>
+  }
+  ```
+  
+  
+
+
 
 
 
