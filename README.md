@@ -156,7 +156,7 @@ In short, an `.html` file is the web page. It points to any additional `.css` fi
 Take your time with this and come back once you feel like you understand the relation between `html` `css` and `js` files.
 
         
-#The files we have
+# The files we have
 By now we should have:
 `Manifest.xml` to help Ae find out extension
 `index.html` to build the panel, which is a web page.
@@ -166,12 +166,12 @@ By now we should have:
         
 **We are missing one important file, [CSInsterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_11.x/Samples/CEP_HTML_Test_Extension-10.0/js/CSInterface.js) **
         
-#What is CSInterface.js?
+# What is CSInterface.js?
 It's a "library" of sort that adobe provides us. It gives us extra functionality over the extension using JavaScript.
 Make sure to include it somewhere in your `src` folder (probably the `js` subfolder), and reference it in your html like so:
 `<script src="../js/CSInterface.js"></script>`
         
-###**CSInterface allows us to communicate with our jsx files!**
+### **CSInterface allows us to communicate with our jsx files!**
 If included correctly in your html, through your javascript file you could write this comment:
 ```
         {
@@ -181,7 +181,14 @@ If included correctly in your html, through your javascript file you could write
 ```
 
 That created an extendscript alert. If it works, you've done a good job so far.
-You declared a CSInterface object. Once it's declared, you can keep using it and its `evalscript` method to execute stuff from your extendscript file.
+You declared a CSInterface object. Once it's declared, you can keep using it and its `evalScript` method to execute stuff from your extendscript file.
+        
+### Learn about promises, async and await
+Feels good when things are working right? Not yet.
+evalScript is an async function and it returns a promise. This means that by the time it returns an answer from your `jsx` file your code keeps on running, and that might cause issues.
+
+My advice is that you google some `await async javascript tutorial` and learn how this system works. Once you feel more comfortable with async functions, come back and try to create a working bridge between your javascript and extendscript engines.
+        
         
         
 
