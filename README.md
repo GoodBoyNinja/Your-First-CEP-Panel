@@ -1,5 +1,6 @@
-# CEP-FML
-How to create an After-Effects extensions without losing your mind
+# CEP-FML (Still in progress)
+How to create an After-Effects extensions without losing your mind.
+Actually, I am not convinced that this is possible, so at the very least I will try to loosley describe my experience, and things I wish somebody were to tell me along the way.
 
 ## Intro
 I have just finished writing my first Extension from Adobe After-Effects. Saying that the proccess was rough is an understatement. I am writing this in hope to **define the path from start to finish** to hopefully help someone out there to create their own extensions.
@@ -17,10 +18,11 @@ Because extensions are web pages, **you will want to eventually learn the basics
 
 If you are, you could clone [Adam Plouff's great repository](https://github.com/adamplouff/CEP-Skelotron) to help getting you started. If you are familiar with those technologies you might as well ditch this page and read his instructions for getting started.
 
-Otherwise, I suggest that you start a bit smaller. Eventually after you feel a bit more comfortable with those technologies you should use Adam's skelotron project as it will give you a quick boost when you are starting and finalizing your projects. Until then, keep reading...
+Otherwise, I suggest that you start a bit smaller. Eventually after you feel a bit more comfortable with those technologies you should use Adam's skelotron project as a template, or if you are stubborn like me create your own template. Keep in mind that following this page would help you get **somewhere** and probably not at your destination. However, it might help you dimistfy some of the concepts. If you are new to this, there is SO MUCH to learn. I enjoy learning through failing.
+Fuck around and take it slowly, if I can do this you can do this, seriously! Break through each step until you feel better about your knowledge.
 
-
-
+Your goal is to eventually be able to point to all the cogs in the machine and explain what they are doing, why they are there and how you can coordinate between them. Once you feel like you can do that, revisit Adam's page and see how it's done right.
+Eventually, you would probably want to create your own template at least once, just to make sure you fully understand the way the system works. Good Luck! You can do this!
 
 
 
@@ -191,21 +193,21 @@ My advice is that you google some `await async javascript tutorial` and learn ho
         
         
  In my tool I ended up using a custom function, with the help of [this medium post](https://medium.com/adobetech/using-es6-promises-to-write-async-evalscript-calls-in-photoshop-2ce40f93bd8b).
-        ```
-        {
+        
+```
           customEvalScript = async function (script) {
                 var result = await new Promise(function (resolve, reject) {
                     GEP?.cs?.evalScript(script, resolve);
                 });
                 return result;
             };
-        }
-        ```
         
-        Give the medium post above a read, it is very informative. I'll be honest, once I got comfortable with this system I kinda tried to forget about it as much as I can.
-        Try training yourself that everytime jsx is involved you have to use some sort of an async system to handle it.
+```
         
-        
+Give the medium post above a read, it is very informative. I'll be honest, once I got comfortable with this system I kinda tried to forget about it as much as I can.
+Try training yourself that everytime jsx is involved you have to use some sort of an async system to handle it.
         
         
-#This page is still in progress. Byeeeee
+        
+      
+# This page is still in progress. Byeeeee
