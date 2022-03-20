@@ -142,25 +142,17 @@ There is probably more formal information about the xml in the [CEP Cookbook](ht
         
 
 
+    
         
+# Start creating your "web page"
+Once you have an html project, you are good to go on working on the panel.
+I am not going to teach you html, css and js on this page, but know that this is probably the next step for you, and it won't take a day. If you don't know anything about that, I would take a break and google html css and js tutorials, maybe make a basic web page or two.
         
+In short, an `.html` file is the web page. It points to any additional `.css` files and `.js` files.
+`.css` is a language used to design the web page and make it preeeeeety.
+`.js` is JavaScript and helps you engae with the web page using scripting. That way you can get data, replace data, change data, add or remove data, etc. A lot of the intereactions of the user with buttons, sliders and other `html` elements will be created using `.js`.
 
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-#What's in my folder?
-
+        
+Take your time with this and come back once you feel like you understand the relation between `html` `css` and `js` files.
 
 
