@@ -190,9 +190,22 @@ evalScript is an async function and it returns a promise. This means that by the
 My advice is that you google some `await async javascript tutorial` and learn how this system works. Once you feel more comfortable with async functions, come back and try to create a working bridge between your javascript and extendscript engines.
         
         
+ In my tool I ended up using a custom function, with the help of [this medium post](https://medium.com/adobetech/using-es6-promises-to-write-async-evalscript-calls-in-photoshop-2ce40f93bd8b).
+        ```
+        {
+          customEvalScript = async function (script) {
+                var result = await new Promise(function (resolve, reject) {
+                    GEP?.cs?.evalScript(script, resolve);
+                });
+                return result;
+            };
+        }
+        ```
         
-
+        Give the medium post above a read, it is very informative. I'll be honest, once I got comfortable with this system I kinda tried to forget about it as much as I can.
+        Try training yourself that everytime jsx is involved you have to use some sort of an async system to handle it.
         
-
-
-
+        
+        
+        
+#This page is still in progress. Byeeeee
