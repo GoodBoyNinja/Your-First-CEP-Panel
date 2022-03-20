@@ -106,7 +106,7 @@ Get [this file](https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x/S
 
 Download `manifest.xml` and place it inside your CSXS Folder.
 
-### What is manifest.xml?
+### The mess that is manifest.xml?
 When after-Effects launches, it is looking for one and only file, `manifest.xml`.
 Inside it there are details about the name of the extension, the version and other info.
 It also points (read below) to two important places: `index.html` and `main.jsx`.
@@ -118,22 +118,33 @@ It also points (read below) to two important places: `index.html` and `main.jsx`
 ### edit manifest.xml
 the manifest file looks somewhat [like this.](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_9.x/Samples/CEP_HTML_Test_Extension-9.0/CSXS/manifest.xml).
 
-For a basic single panel, your <ExtensionList> should look somewhat like this:
- ```
-  {
-      <ExtensionList>
-        <Extension Id="com.adobe.TOOL-NAME.Panel" Version="6.1.0"/>
-    </ExtensionList>
-  }
-  ```
- your <hostList> is a list of apps that will be able to run your extension. If you target only Ae:
-  ```
-  {
-          <HostList>
-            <Host Name="AEFT" Version="13.0"/>
-        </HostList>
-  }
-  ```
+Long and scary isn't it?
+However, this is [Adam's manifest.xml file](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_9.x/Samples/CEP_HTML_Test_Extension-9.0/CSXS/manifest.xml)
+
+It's a reallt good idea to compare the two. The manifest.xml from the Adobe repo is for a big test project the consits of multiple panels and windows. It's not exactly what you need, but you probably want to get comfortable with reading it and understanding how it works.
+
+
+The key things you want to know about this file is that:
+-You want to have a bundle name in `ExtensionBundleId`, will often look like `com.adobe.myExtensionName`.
+-You want to define an <Extension> in the `<ExtensionList>` for each **panel** in your **extension** and name them accordingly. For example: `com.adobe.myExtensionName.Panel1`
+-`ExtensionBundleVersion` is the version of your EXTENSION, as a package, as a tool.
+-`HostList` is the list of apps that your extension supports. With ae: `<Host Name="AEFT" Version="13.0"/>`
+- Inside `<DispatchInfoList>` you will find a pair of `<Extension></Extension>` tags **for each panel in your extension**. Their names correspond to the names you defined earlier in the `<ExtensionList>` and inside each one are a bunch of important and not so important stuff.
+- On the more important stuff side: `<MainPath>` points to our `index.html` file. set it to `<MainPath>./html/index.html</MainPath>`. That way After-Effects will know that after reading this xml file, it will start reading the web page from `index.html`.
+- After Effects also wants to knwo where the extendscript file is. That will be: `<ScriptPath>./jsx/core.jsx</ScriptPath>`
+
+ 
+If this feels like a lot, it is because it is.
+Take a few hours to write your own xml file, make changes, learn more about xml online and how data goes in tags.
+This file is long and scary, **but at the end of the day it is the manifest, the kickstarter of your project. This file coordinates everything. This file has nothing to do with the way your extension looks, it just guides the host app (Ae) and tells it what the extension is, and where to start reading it from (and more).**
+        
+There is probably more formal information about the xml in the [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/Documentation/README.md)
+        
+
+
+        
+        
+
   
   
 
