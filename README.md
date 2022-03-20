@@ -101,7 +101,7 @@ So far there are no files, only folders.
 This folder structure is close to what you would find in [Adam's skeletron](https://github.com/adamplouff/CEP-Skelotron).
 We would work inside the **src** folder and its sub folders. The dist folder will be a place to store the release versions.
 
-#we need files
+# we need files
 Get [this file](https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_11.x/Samples/CEP_HTML_Test_Extension-10.0/CSXS) called `manifest.xml`. If you are reading this in the future, you might want check if newer versions exists. sorry <3
 
 Download `manifest.xml` and place it inside your CSXS Folder.
