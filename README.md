@@ -48,16 +48,19 @@ you probably do not want to create your extension folder exactly there for multi
 - you might not have full access to save files from vsc
 - it's harder to manage and backup your projects (especially if you are using something like dropbox)
 
-_You might ask yourself "Am I supposed to copy my extension folder to the extensions folder each time I want to preview the change in After-Effects?"._
 
-~~**Instead, create a synbolic link** ~~
+~~Instead, create a synbolic link~~
+
 **Instead, use my reload.js script**
+
 It's much better that you use `nodejs` and `nodemon` using my `reload.js`: [reload.js](https://github.com/GoodBoyNinja/CEP-Auto-Folder-Copy)
 Otherwise, you could use symbolic link (resources below) but it may puts your files at risk, as deleting extensions from a ZXP Installer can delete your original src directory as well. It's worth taking the couple of hours to learn the basics of `nodejs`.
 If you prefer using a symbolic link, use the resources below:
 
 More resources on symbolic link:
+
 [for Windows with Powershell](https://www.youtube.com/watch?v=_VnONfOgP8M)
+
 [for Mac with the terminal](https://www.youtube.com/watch?v=43mGItOoJIM)
 
 
