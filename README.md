@@ -34,7 +34,6 @@ Create a folder with the name of your tool somewhere that it is comfortable for 
 You might be tempted to create your extension folder where extensions are loaded from (in one of the following directories as mentioned in the [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md)):
 
 ```
-{
 Win(x86): C:\Program Files\Common Files\Adobe\CEP\extensions
 Win(x64): C:\Program Files (x86)\Common Files\Adobe\CEP\extensions, and C:\Program Files\Common Files\Adobe\CEP\extensions (since CEP 6.1)
 Mac: /Library/Application Support/Adobe/CEP/extensions
@@ -42,7 +41,6 @@ Per-user extension folder
 
 Win: C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP/extensions
 Mac: ~/Library/Application Support/Adobe/CEP/extensions
-}
 ```
 
 **Do not work from the extensions folder!**
@@ -85,7 +83,6 @@ More resources on symbolic link:
 # Folder Structure
 You could use the [test extension](https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x/Samples/CEP_HTML_Test_Extension-9.0) from the CEP-Resources repository. However, I would suggest something more like:
 ```
-{
 myExtension/
         |
         |_src/
@@ -97,7 +94,7 @@ myExtension/
         |     |__ -CSXS/
         |
         |_dist/
-        }
+        
 ```
 So far there are no files, only folders.
 This folder structure is close to what you would find in [Adam's skeletron](https://github.com/adamplouff/CEP-Skelotron).
@@ -176,10 +173,8 @@ Make sure to include it somewhere in your `src` folder (probably the `js` subfol
 ### **CSInterface allows us to communicate with our jsx files!**
 If included correctly in your html, through your javascript file you could write this comment:
 ```
-        {
-          var csInterface = new CSInterface();
-          csInterface.evalScript("alert('hello')");
-        }
+var csInterface = new CSInterface();
+csInterface.evalScript("alert('hello')");
 ```
 
 That created an extendscript alert. If it works, you've done a good job so far.
@@ -195,12 +190,12 @@ My advice is that you google some `await async javascript tutorial` and learn ho
  In my tool I ended up using a custom function, with the help of [this medium post](https://medium.com/adobetech/using-es6-promises-to-write-async-evalscript-calls-in-photoshop-2ce40f93bd8b).
         
 ```
-          customEvalScript = async function (script) {
-                var result = await new Promise(function (resolve, reject) {
-                    GEP?.cs?.evalScript(script, resolve);
-                });
-                return result;
-            };
+  let customEvalScript = async function (script) {
+        var result = await new Promise(function (resolve, reject) {
+            GEP?.cs?.evalScript(script, resolve);
+        });
+        return result;
+    };
         
 ```
         
