@@ -50,35 +50,16 @@ you probably do not want to create your extension folder exactly there for multi
 
 _You might ask yourself "Am I supposed to copy my extension folder to the extensions folder each time I want to preview the change in After-Effects?"._
 
-**Instead, create a synbolic link**
-So as [Adam Plouff recommends](https://github.com/adamplouff/CEP-Skelotron#usage) you can create a symbolic link.
-
-In short, a synbolic link is like a shortcut to your folder, but unlike a shortcut it behaves like the same folder. This means that if your extension folder `C:/Users/${userName}/desktop/myExtension/` has a link to in in 
-`C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP\extensions\myExtension\`, After-Effects will actually be able to read your those files and recognize your extension.
-
-*If you are on pc, I have found that it's much easier to create a symbolic link through powerShell (instead of cmd). 
-
-a symbolic link using powershell would look something like this:
-
-`New-Item -ItemType SymbolicLink -Path "C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP\extensions\myExtension\" -Target "C:/Users/${userName}/desktop/myExtension/"`
-
-using the terminal on a mac, it should look somewhat like this:
-
-`ln -s "C:/Users/${userName}/desktop/myExtension/" C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP\extensions\myExtension\`
+~~**Instead, create a synbolic link** ~~
+**Instead, use my reload.js script**
+It's much better that you use `nodejs` and `nodemon` using my `reload.js`: [reload.js](https://github.com/GoodBoyNinja/CEP-Auto-Folder-Copy)
+Otherwise, you could use symbolic link (resources below) but it may puts your files at risk, as deleting extensions from a ZXP Installer can delete your original src directory as well. It's worth taking the couple of hours to learn the basics of `nodejs`.
+If you prefer using a symbolic link, use the resources below:
 
 More resources on symbolic link:
 [for Windows with Powershell](https://www.youtube.com/watch?v=_VnONfOgP8M)
 [for Mac with the terminal](https://www.youtube.com/watch?v=43mGItOoJIM)
 
-
-```diff
-- An important warning about Symbolic Link:
-- If you are using a symbolic link, deleting an extension through a ZXP Installer will delete your original src folder as well!
--It's really important that you understand that and make backups to your project often, or use git and github.
--That way you can make sure there is an online copy of your files from time to time.
--Dropbox saved my butt once with their time machine, so keep that in mind.
--Do not uninstall even your finalized extension using a ZXP installer on your machine.
-```
 
 
 # Folder Structure
