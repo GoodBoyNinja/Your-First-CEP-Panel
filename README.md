@@ -72,11 +72,12 @@ More resources on symbolic link:
 
 
 ```diff
-- An important note about Symbolic Link:
-- With symbolic link, deleting files or even the folder itself from the "linked" instance (the one in the extensions folder) affects the original folder.
+- An important warning about Symbolic Link:
+- If you are using a symbolic link, deleting an extension through a ZXP Installer will delete your original src folder as well!
 -It's really important that you understand that and make backups to your project often, or use git and github.
 -That way you can make sure there is an online copy of your files from time to time.
 -Dropbox saved my butt once with their time machine, so keep that in mind.
+-Do not uninstall even your finalized extension using a ZXP installer on your machine.
 ```
 
 
