@@ -1,4 +1,34 @@
 # CEP-FML (Still in progress)
+Things to expect when creating your first CEP panel after developing scripts using ExtendScript, in a recommended order:
+1. Install and learn some [node.js](https://nodejs.org/en/) basics, get comfy with the console. `this will come in handy when you want to pack your extension for distribution, and later on for starting a new project using templates from github / your own template`
+
+2. Lean [how to use git and github](https://www.youtube.com/watch?v=BCQHnlnPusY). `this will come handy for easier version control for your project, as well as using packages from github to kickstart a new project / improve your workflow`
+
+3. Learn the basics of website development [HTML](https://www.youtube.com/watch?v=URSH0QpxKo8&list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX), [JS](https://www.youtube.com/results?search_query=js+basics) and [CSS](https://www.youtube.com/watch?v=zGL8q8iQSQw&list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX&index=7) `the extension panels are chromium tabs, you design your tool the same way you design a website, using HTML, CSS and JavaScript. This is different to creating a ScriptUI panel as you might be used to. A web page is written in HTML, styled using CSS and intereacts through JavaScript. If you can create a website, you can create a cep panel.`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
 How to create an After-Effects extensions without losing your mind.
 Actually, I am not convinced that this is possible, so at the very least I will try to loosley describe my experience, and things I wish somebody were to tell me along the way.
 
