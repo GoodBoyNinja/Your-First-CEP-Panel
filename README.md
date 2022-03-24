@@ -1,6 +1,9 @@
 # CEP-FML (Still in progress)
 Things to expect when creating your first CEP panel after developing scripts using ExtendScript, in a recommended order:
-1. Install and learn some [node.js](https://nodejs.org/en/) basics, get comfy with the console. `this will come in handy when you want to pack your extension for distribution, and later on for starting a new project using templates from github / your own template`
+
+0.9: I recommend getting familiar with [Visual Studio Code](https://code.visualstudio.com). `If you are coming from a smipler text editor such as Atom this might feel like much. Take a few days to migrate, google / youtube search your struggles. In the long term, vsc is the better editor, even if a bit less user friendly for beginners.`
+
+1. Install and learn some [node.js](https://nodejs.org/en/) basics, as well as [npm](https://www.youtube.com/watch?v=s70-Vsud9Vk). Get comfy with the console. `this will come in handy when you want to pack your extension for distribution, and later on for starting a new project using templates from github / your own template`
 
 2. Lean [how to use git and github](https://www.youtube.com/watch?v=BCQHnlnPusY). `this will come handy for easier version control for your project, as well as using packages from github to kickstart a new project / improve your workflow`
 
@@ -11,6 +14,39 @@ Things to expect when creating your first CEP panel after developing scripts usi
 5. Learn about [manifest.xml](https://fenomas.com/2014/08/cep-5-getting-started-en/). `This is one of the required files to create an extension. This file is provided by Adobe in the `[CEP Resources](https://github.com/Adobe-CEP/CEP-Resources)` repository. You need to know that in the future this file might change based on Adobe CEP releases and changes. This file kickstarts your project, it includes information about the name of the bundle, how many panels does it have, which panels to show. It also points to the main index.html file that you will create for your extension. The host app (After-Effects in our case) then reads the manifest.xml file, and if everything makes sense to it and it is appy, it will go on to put your extension under window -> extensions -> myExtension. When you run your extension, it gets the index.html from the manifest file, and keeps going from there...`
 
 6. Learn about [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_11.x/Samples/CEP_HTML_Test_Extension-10.0/js/CSInterface.js) `That is another file adobe provides. This file is not essential for your extension to run, but it serves as a bridge between your javascript and your extendscript files using the 'evalScript()' function. In addition it extends on your JavaScript code in the context of your extension. Remember, javascript if originally for the web, it does not do stuff like "Get the skin color of After-Effects" or "Get details about the host app (After-Effects)". CSInterface.js, once inclued in your html in a <script></script> tag, lets you perform such tasks. Feel free to read the CSInterface.js file as it is pretty well documented, and may give you an idea about things you can do as part of your extension panel development journey.`
+
+*intermission: At this point you own all the infinity stones. You understand that `manifest.js` and `CSInterface` are essentials for your extension, that you make your panel using `html, CSS and JavaScript`, and that managing your project makes much more sense using `nodejs, git and github`. You are now ready to create your first extension. Let's keep going!
+
+8. Create your first extension project! Hurray! `I recommend that you create your extension in the following structure:`
+```
+myExtension/
+        |
+        |___src/
+        |     |__ js/
+        |     |      |_main.js
+        |     |       |_CSInterface.js
+        |     |
+        |     |__ jsx/
+        |     |       |_extendScript.jsx
+        |     |
+        |     |__ -html/
+        |     |       |_index.html
+        |     |
+        |     |__ -css/
+        |     |      |_style.css
+        |     |
+        |     |__ -assets/
+        |     |
+        |     |__ -CSXS/
+        |            |_manifest.xml
+        |
+        |____dist/
+        
+```
+
+7. Learn about Good Boy Ninja's [reload.js](https://github.com/GoodBoyNinja/CEP-Auto-Folder-Copy). `This lets you work on your extension outside the After-Effects extensions directory. The benefit you get from this is that you can manage your project more easily. The extensions folder are sometimes read only and are usually not available for backup using stuff like dropbox. If you work in the extensions folder you are prone for using your files upon installation / uninstallation of extensions. Use reload.js to have nodemon copy your work directory to the extensions folder every time you are making changes to files.`
+
+
 
 
 
