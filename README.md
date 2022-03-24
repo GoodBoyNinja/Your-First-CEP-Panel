@@ -43,6 +43,7 @@ myExtension/
         |____dist/
         
 ```
+`using a 'src' and dist' folders inside your extension folder gives you a space to place the final 'zxp' bundle for distributin. It also plays well with reload.js (read the next segment) as well as node.js and npm. In the future, we will include more files in the root extension folder in order to make the last steps of bundling your extension easier. Keeping your SOURCE CODE in the 'src' folder makes it easy to keep track of everything.
 
 7. Learn about Good Boy Ninja's [reload.js](https://github.com/GoodBoyNinja/CEP-Auto-Folder-Copy). `This lets you work on your extension outside the After-Effects extensions directory. The benefit you get from this is that you can manage your project more easily. The extensions folder are sometimes read only and are usually not available for backup using stuff like dropbox. If you work in the extensions folder you are prone for using your files upon installation / uninstallation of extensions. Use reload.js to have nodemon copy your work directory to the extensions folder every time you are making changes to files.`
 
