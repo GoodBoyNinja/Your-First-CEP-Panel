@@ -1,5 +1,6 @@
 # CEP-FML (Still in progress)
-Things to expect when creating your first CEP panel after developing scripts using ExtendScript, in a recommended order:
+Things to expect when creating your first CEP panel after developing scripts using ExtendScript, in a recommended order. 
+*sorry about typos, I've been through enough pain to give a shit*
 
 0.9: I recommend getting familiar with [Visual Studio Code](https://code.visualstudio.com). `If you are coming from a smipler text editor such as Atom this might feel like much. Take a few days to migrate, google / youtube search your struggles. In the long term, vsc is the better editor, even if a bit less user friendly for beginners.`
 
