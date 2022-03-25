@@ -107,5 +107,5 @@ In order to not burn in the eternal hell of creating a new extension again and a
 5. Branch out of CEP. `If you started at extendscript, you learned a whole lot of stuff by making your way here. Your new nodejs skills, html, css and javascript puts you in a position to learn even more cool stuff. You can now make web apps and cool web pages. Consider the possibilities! Also, there are a lot of GREAT technologies out there that do not involve you going through hell along the way. Not everything is like CEP, there's a lof ot neat stuff out there. Go have fun and explore other creatives ideas you've been keeping inside your big, juicy brain.`
 
 
-That's all.
+That's was my expreicne. Now if you don't mind me, I have to go outside.
 Good Boy Ninja
