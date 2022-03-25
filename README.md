@@ -113,11 +113,17 @@ Good Boy Ninja
 
 ## Other notable sources:
 [Refresh your panel](https://github.com/Adobe-CEP/Getting-Started-guides/issues/31)
+
 [Tom Scharstein on Github](https://github.com/Inventsable)
+
 [Adam Plouff on Github](https://github.com/adamplouff)
-[Tim Haywood on Github](https://github.com/timhaywood?tab=repositories),
+
+[Tim Haywood on Github](https://github.com/timhaywood?tab=repositories)
+
 [Kyle Martinez on Github](https://github.com/kyletmartinez)
+
 [NT Productions on YouTube](https://www.youtube.com/c/NTProductions)
+
 [The Coding Train on YouTube](https://www.youtube.com/c/TheCodingTrain)
 
 
