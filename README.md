@@ -1,4 +1,4 @@
-# CEP-FML (Still in progress)
+# CEP-FML (Or how to graduate to Extensions from Extendscript)
 Things to expect when creating your first CEP panel after developing scripts using ExtendScript, in a recommended order. 
 *sorry about typos, I've been through enough pain to give a shit*
 
