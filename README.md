@@ -5,7 +5,11 @@ This post was an attempt to help ExtendScript developers to jump ship and start 
 ### **You are NOT ready**     
 
 Admittedly, online information about CEP development is lacking. If you are coming from ExtendScript background (meaning, you basically just learned how to program and created a couple of script panels for After-Effects), I recommend you to keep in mind this:
->        🧠 All CEP resources online, even Adobe's cookbook-so-called-"getting started"-guide, are written for web developers. Since you are not a web developer (yet), trying to follow even the most basic guides will be a discouraging and long struggle that will result in you giving up.
+>        🧠 All CEP resources online, even Adobe's cookbook-so-called-"getting started"-guide,
+>        are written for web developers.
+>        Since you are not a web developer (yet), trying to follow even the most
+>        basic guides will be a discouraging and long struggle
+>        that will result in you giving up.
 
 You are currently at a point where you are used to making scripts, which **just work**.
 CEP development is the opposite. At first, **nothing works**, and you have to slowly build things together piece by piece to make things work. Incredible projects such as [Bolt-CEP](https://github.com/hyperbrew/bolt-cep) help making the experience more pleasant, but you as an ExtendScript developer will still have to learn a lot of new things just to get things to work.
@@ -38,8 +42,12 @@ The easy way is to use a boilerplate project such as [Bolt-CEP](https://github.c
 > 💡 Important: Bolt-CEP is using JavaScript frameworks and lets you choose between React, Vue and Svelte. If you are not familiar with any of those, I recommend you to start with Svelte as it is the easiest to learn. However, that is one more thing to learn :(
 
         🫠 It's up to you to decide if you want to learn a new framework or not.
-        You might think it will just be easier to not use Bolt-CEP and just do everything manually, but that is not true.
-        ⏰ Learning the basics of Svelte takes a couple of hours, and you can use vanilla JavaScript along with it, so you should feel right at home.
+        You might think it will just be easier to not use Bolt-CEPand just
+        do everything manually, but that is not true.
+       
+        Learning the basics of Svelte takes a couple of hours,
+        and you can use vanilla JavaScript along with it,
+        so you should feel right at home.
 
 #### **The hard way**
 So you made it here...
