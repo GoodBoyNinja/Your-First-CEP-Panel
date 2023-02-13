@@ -35,7 +35,7 @@ Now that you have the skills, you can choose between the easy way and the hard w
 
 #### **The easy way**
 The easy way is to use a boilerplate project such as [Bolt-CEP](https://github.com/hyperbrew/bolt-cep). 
-> 💡 Important note: Bolt-CEP is JavaScript frameworks and lets you choose between React, Vue and Svelte. If you are not familiar with any of those, I recommend you to start with Svelte as it is the easiest to learn. However, that is one more thing to learn :(
+> 💡 Important: Bolt-CEP is using JavaScript frameworks and lets you choose between React, Vue and Svelte. If you are not familiar with any of those, I recommend you to start with Svelte as it is the easiest to learn. However, that is one more thing to learn :(
 
         🫠 It's up to you to decide if you want to learn a new framework or not.
         You might think it will just be easier to not use Bolt-CEP and just do everything manually, but that is not true.
