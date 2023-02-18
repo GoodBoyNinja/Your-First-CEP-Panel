@@ -34,6 +34,9 @@ The topics you want to cover are:
 - A little bit of [JSON](https://www.w3schools.com/js/js_json_intro.asp) (it's very similar to JavaScript objects)
 - Some basic [Node.js](https://nodejs.org/en/) terminal commands (Making a folder, moving files, etc)
 
+### **Why are there so many things to learn?**
+[This Video](https://youtu.be/QliwSwWHJoQ) does a great job at explaining the complexity of modern web development.
+
 ### **I learned it all, what now?**
 Now that you have the skills, you can choose between the easy way and the hard way.
 
