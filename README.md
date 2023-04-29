@@ -42,16 +42,11 @@ The topics you want to cover are:
 Now that you have the skills, you can choose between the easy way and the hard way.
 
 #### **The easy way**
-The easy way is to use a boilerplate project such as [Bolt-CEP](https://github.com/hyperbrew/bolt-cep). 
-> 💡 Important: Bolt-CEP is using JavaScript frameworks and lets you choose between React, Vue and Svelte. If you are not familiar with any of those, I recommend you to start with Svelte as it is the easiest to learn. However, that is one more thing to learn :(
+Use one of the following:
+*  [⚡ Bolt-CEP](https://github.com/hyperbrew/bolt-cep) - A great tool that will help you get started with CEP development. This is probably the most production ready starting point you can find. The downside is that it relies on frameworks such as React, Vue and Svelte. It's totally doable to learn one of these (Probably Svelte would be the fastest to learn), but it's still some extra work.
+* My [🌼 CEP-Vite-Template](https://github.com/GoodBoyNinja/cep-vite-template). This is what I use for my projects, it's a simpler lo-fi solution that also uses Vite but without any frameworks. You might find it easier to start with, but it's not as production ready as Bolt-CEP.
 
-        🫠 It's up to you to decide if you want to learn a new framework or not.
-        You might think it will just be easier to not use Bolt-CEPand just
-        do everything manually, but that is not true.
-       
-        Learning the basics of Svelte takes a couple of hours,
-        and you can use vanilla JavaScript along with it,
-        so you should feel right at home.
+
 
 #### **The hard way**
 So you made it here...
