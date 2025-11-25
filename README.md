@@ -29,7 +29,7 @@ The topics you want to cover are:
 - - [Async/Await and Promises](https://www.youtube.com/watch?v=QO4NXhWo_NM&list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx&index=1&t=1329s)
 - - ES6 Modules (import/export) `Learn how to work with multiple files`
 - - Package Managers (npm, yarn, etc) `Learn how to install and use packages from the internet`
-- - [Module Bundlers & Live Server](https://www.youtube.com/watch?v=5IG4UmULyoA) (You're gonna probably use [rollup.js](http://rollupjs.org)) `Learn how to take all your files and bundle them into one file`
+- - [Module Bundlers & Live Server](https://www.youtube.com/watch?v=5IG4UmULyoA) (You're gonna probably use [vite](https://vite.dev/)) `Learn how to take all your files and bundle them into one file`
 - [Git & Github](https://www.youtube.com/watch?v=BCQHnlnPusY) `Version control for your project, as well as a place to store your code online`
 - A little bit of [XML](https://www.w3schools.com/xml/) (it's very similar to HTML)
 - A little bit of [JSON](https://www.w3schools.com/js/js_json_intro.asp) (it's very similar to JavaScript objects)
