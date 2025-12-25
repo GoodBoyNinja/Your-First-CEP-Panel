@@ -70,7 +70,7 @@ In general, after you acquired the knowledge of web development it will not be t
 # **A word of encouragement**
 There is a lot to learn before you can start creating sleek and beautiful CEP panels. However, it is not as hard as it seems.
 
-If anything, modern web development is easier than it has ever been. The tooling, resources and documentation available for web development is so good, it will make you hate ExtendScript even more.
+If anything, modern web development is easier than it has ever been. The tooling, resources and documentation available for web development are so good, it will make you hate ExtendScript even more.
 
 If [I did it](https://www.goodboy.ninja/skew) (and I am not a web developer), you can do it too. Take as much time as you need to learn the basics of web development. It will be worth it in the end.
 
